@@ -1,0 +1,70 @@
+ 
+.q-image-wrap{
+  width: 150rpx;
+  height: 150rpx;
+  border: 3px solid #f0f0f0;
+  float: left;
+  margin-right: 20rpx;
+  position: relative;
+  overflow: hidden;
+}
+.q-image-remover{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  background: #2e82ff;
+  position: absolute;
+  top:-50rpx;
+  right:-50rpx;
+ 
+}
+.q-image-remover icon{
+  position: absolute;
+  left:12rpx;
+  bottom:12rpx;
+  color:#fff;
+}
+ 
+.uploadImgBtn{
+  width: 150rpx;
+  height: 150rpx;
+  text-align: center;
+  line-height: 140rpx;
+  border: 6rpx solid #f0f0f0;
+  float: left;
+}
+.uploadImgBtn icon{
+  font-size: 80rpx;
+  color: #999;
+}
+.order_process {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10rpx 10rpx 20rpx 10rpx;
+  background-color: #fff;
+  }
+  .process_wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  }
+  .process {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  }
+  .process_icon {
+  width: 50rpx;
+  height: 50rpx;
+  }
+  .process_line {
+  background: #eff3f6;
+  flex: 1;
+  height: 5rpx;
+  }
+  .process_name {
+  font-size: 24rpx;
+  }
+  
+  

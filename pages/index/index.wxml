@@ -1,0 +1,43 @@
+<view class="container" >
+<SearhInput class="iconfont icon-star" ></SearhInput>
+<view>
+<swiper>
+<swiper-item
+wx:for="{{swiperList}}"
+wx:key="goods_id"
+>
+<navigator>
+<image src="{{item.image_src}}"></image></navigator>
+</swiper-item>
+</swiper>
+</view>
+  <image class="banner " mode="widthFix" src="/images/banner.png"></image>
+  <view class="search">
+    <input maxlength="10" class="search-shuru" placeholder="最大输入长度10" />
+    <button type="button" class="search-anniu"></button>
+  </view>
+  <view class="all-seizure">
+    <view class="seizure" bindtap="onRightItemClick" mode="cover">
+      <image class="kouya1" mode="widthFix" src="/images/kouya.png"></image>
+      <view class="seizure-text">罚款（1）</view>
+      <image class="kouya2" mode="widthFix" src="/images/icon_add.png"></image>
+    </view>
+    <view class="seizure" bindtap="onRight">
+      <image class="kouya1"  mode="widthFix" src="/images/shoujiao.png"></image>
+      <view class="seizure-text">保证金（3）</view>
+      <image class="kouya2" mode="widthFix" src="/images/icon_add.png"></image>
+    </view>
+    <view class="seizure" bindtap="getScancode">
+      <image class="kouya1" mode="widthFix" src="/images/baozheng.png"></image>
+      <view class="seizure-text">扫一扫</view>
+      <image class="kouya2" mode="widthFix" src="/images/icon_add.png"></image>
+    </view>
+    <view class="seizure">
+      <image class="kouya1" mode="widthFix" src="/images/kouya.png"></image>
+      <view class="seizure-text">收缴（1）</view>
+      <image class="kouya2" mode="widthFix" src="/images/icon_add.png"></image>
+    </view>
+
+  </view>
+  
+</view>

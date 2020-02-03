@@ -1,0 +1,63 @@
+
+.banner{
+  width:690rpx;
+  margin:0 auto;
+  display:block;
+  margin-top:10rpx;
+}
+.search-anniu{
+  float:left;
+  border-radius: 10rpx;
+  width:80rpx;
+  height:80rpx;
+  margin:0;
+  padding:0;
+  background:  #0155ff url("../../images/icon_search.png") no-repeat 16rpx ;
+  background-size: 44rpx;
+}
+.search-shuru{
+  float:left;
+  width:85%;
+  border-radius: 10rpx;
+  background-color: white;
+  height:80rpx;
+  margin:0;
+  padding-left:10rpx;
+}
+.search{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width:690rpx;
+  margin:0 auto;
+  margin-top:20rpx;
+}
+.all-seizure{
+  margin-top:30rpx;
+}
+.seizure{
+  width:690rpx;
+  height:144rpx;
+  border-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+  margin:0 auto;
+  margin-bottom:30rpx;
+}
+.kouya1{
+  width:60rpx;
+  float:left;
+  margin-top:50rpx;
+  margin-left:20rpx;
+}
+.kouya2{
+  width:44rpx;
+  float:right;
+  margin-top:50rpx;
+  margin-right:20rpx;
+}
+.seizure-text{
+  line-height: 144rpx;
+  float:left;
+  margin-left:30rpx;
+}

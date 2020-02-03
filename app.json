@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f5f5f5",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#bbc1fd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/footer_1.png",
+        "selectedIconPath": "images/foot_11.png",
+        "text": "已处理"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "未处理",
+        "iconPath": "images/footer_2.png",
+        "selectedIconPath": "images/footer_22.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "mp-cells": "weui-miniprogram-2/cells/cells",
+    "mp-cell": "weui-miniprogram-2/cell/cell",
+    "mp-badge": "weui-miniprogram-2/badge/badge"
+  }
+}
