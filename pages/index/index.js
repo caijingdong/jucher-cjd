@@ -7,28 +7,30 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     result: '111',
-    swiperList:[],
+    swiperList: [],
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
   onLoad: function () {
     wx.request({
-      url:'https://api.zbztb.cn/api/public/v1/home/swiperdata',
+      url: 'https://api.zbztb.cn/api/public/v1/home/swiperdata',
       //url:'test.php',
-      success: (result) =>{
-        console.log(result)
-       
+      success: (result) => {
+       // console.log(result)
+        this.setData({
+          swiperList: result.data.message
+        })
       }
     })
 
   },
-  getUserInfo: function(e) {
+  getUserInfo: function (e) {
     console.log(e)
     app.globalData.userInfo = e.detail.userInfo
     this.setData({
@@ -36,7 +38,7 @@ Page({
       hasUserInfo: true
     })
   },
-  onRightItemClick:function(){
+  onRightItemClick: function () {
     wx.chooseImage({
       success(res) {
         const tempFilePaths = res.tempFilePaths
@@ -55,26 +57,26 @@ Page({
       }
     })
   },
-  onRight:function() {
+  onRight: function () {
     console.log("1")
     wx.navigateTo({
       url: '../list/list'
-    })  
+    })
   },
-  getScancode:function(){
+  getScancode: function () {
     var _this = this;
     wx.scanCode({
-      success (res) {
+      success(res) {
         console.log(res)
         wx.navigateTo({
           url: '../list/list?title=' + res.result
- 
+
         })
         var result = res.result;
- 
+
         _this.setData({
           result: result,
- 
+
         })
 
       }

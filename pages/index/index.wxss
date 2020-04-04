@@ -61,3 +61,10 @@
   float:left;
   margin-left:30rpx;
 }
+swiper{
+  width:750rpx;
+  height:340rpx;
+}
+.magic{
+  width:100%;
+}

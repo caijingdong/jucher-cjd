@@ -1,15 +1,17 @@
 <view class="container" >
 <SearhInput class="iconfont icon-star" ></SearhInput>
-<view>
-<swiper>
+<view class="index_swiper">
+<!-- 轮播图 开始 -->
+<swiper autoplay indicator-dots circular>
 <swiper-item
 wx:for="{{swiperList}}"
 wx:key="goods_id"
 >
 <navigator>
-<image src="{{item.image_src}}"></image></navigator>
+<image class="magic" mode="widthFix" src="{{item.image_src}}"></image></navigator>
 </swiper-item>
 </swiper>
+<!-- 轮播图 结束 -->
 </view>
   <image class="banner " mode="widthFix" src="/images/banner.png"></image>
   <view class="search">
@@ -29,7 +31,7 @@ wx:key="goods_id"
     </view>
     <view class="seizure" bindtap="getScancode">
       <image class="kouya1" mode="widthFix" src="/images/baozheng.png"></image>
-      <view class="seizure-text">扫一扫</view>
+      <view class="seizure-text">扫一扫11</view>
       <image class="kouya2" mode="widthFix" src="/images/icon_add.png"></image>
     </view>
     <view class="seizure">
